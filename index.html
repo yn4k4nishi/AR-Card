@@ -11,14 +11,12 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
             <a-assets>
-                <img id="dog" src="profile.png">
+                <img id="profile" src="profile.png">
             </a-assets>
             <a-marker type="pattern" url="pattern-QR.patt">
-                <a-entity
-                    position="0 0 0"
-                    scale="0.05 0.05 0.05"
-                    gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-                ></a-entity>
+                <a-entity>
+                    <a-image width="1" height="1" src="#profile"></a-image>
+                </a-entity>
             </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
